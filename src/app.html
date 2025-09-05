@@ -1,5 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme=""
+	><script>
+		((theme = localStorage.getItem('theme')) => {
+			if (theme) {
+				document.documentElement.classList.toggle('dark', theme === 'dark')
+			} else {
+				document.documentElement.classList.toggle('dark', window.matchMedia('(prefers-color-scheme: dark)').matches)
+			}
+		})()
+	</script>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
