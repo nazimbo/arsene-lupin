@@ -3,7 +3,10 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-@theme {
-  --font-family-manuscript: 'Mr De Haviland', cursive;
-  --font-family-serif-fine: 'Cormorant Garamond', serif;
+.font-manuscript {
+  font-family: 'Mr De Haviland', cursive;
+}
+
+.font-serif-fine {
+  font-family: 'Cormorant Garamond', serif;
 }
