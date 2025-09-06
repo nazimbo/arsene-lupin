@@ -26,9 +26,9 @@
 <div class="min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
 	<header class="container mx-auto px-4 py-6 flex justify-between items-center">
 		<nav class="flex gap-6">
-			<a href="/" class="hover:underline">Accueil</a>
-			<a href="/personnage" class="hover:underline">Le Personnage</a>
-			<a href="/oeuvres" class="hover:underline">Les Œuvres</a>
+			<a href="/" class="font-serif-fine hover:underline">Accueil</a>
+			<a href="/personnage" class="font-serif-fine hover:underline">Le Personnage</a>
+			<a href="/oeuvres" class="font-serif-fine hover:underline">Les Œuvres</a>
 		</nav>
 		<ThemeToggle />
 	</header>
