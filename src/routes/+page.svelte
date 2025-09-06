@@ -8,11 +8,11 @@
 		Arsène Lupin
 	</h1>
 	
-	<blockquote class="font-serif-fine text-xl md:text-2xl text-center italic mb-8 font-light text-gray-700 dark:text-gray-300">
+	<blockquote class="font-serif-fine text-xl md:text-2xl text-center italic mb-8 font-light text-black dark:text-white">
 		« Il faut être de son temps. »
 	</blockquote>
 	
-	<p class="font-serif-fine text-lg text-center font-light leading-relaxed mb-12 text-gray-600 dark:text-gray-400 max-w-2xl">
+	<p class="font-serif-fine text-lg text-center font-light leading-relaxed mb-12 text-black dark:text-white max-w-2xl">
 		Plongez dans l'univers du gentleman-cambrioleur le plus célèbre de la littérature française, 
 		créé par Maurice Leblanc.
 	</p>
