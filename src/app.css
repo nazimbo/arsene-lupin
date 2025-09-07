@@ -4,9 +4,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 .font-manuscript {
-  font-family: 'Mr De Haviland', cursive;
+	font-family: 'Mr De Haviland', cursive;
 }
 
 .font-serif-fine {
-  font-family: 'Cormorant Garamond', serif;
+	font-family: 'Cormorant Garamond', serif;
 }

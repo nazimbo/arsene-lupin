@@ -23,8 +23,10 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<div class="min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
-	<header class="container mx-auto px-4 py-6 flex justify-between items-center">
+<div
+	class="min-h-screen bg-white text-black transition-colors duration-300 dark:bg-black dark:text-white"
+>
+	<header class="container mx-auto flex items-center justify-between px-4 py-6">
 		<nav class="flex gap-6">
 			<a href="/" class="font-serif-fine hover:underline">Accueil</a>
 			<a href="/personnage" class="font-serif-fine hover:underline">Le Personnage</a>

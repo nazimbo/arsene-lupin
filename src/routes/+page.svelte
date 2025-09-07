@@ -3,36 +3,44 @@
 	<meta name="description" content="L'univers du gentleman-cambrioleur Arsène Lupin" />
 </svelte:head>
 
-<div class="min-h-[calc(100vh-200px)] flex flex-col items-center justify-center px-6 max-w-4xl mx-auto">
-	<h1 class="font-manuscript text-6xl md:text-7xl lg:text-8xl text-center mb-8 text-black dark:text-white">
+<div
+	class="mx-auto flex min-h-[calc(100vh-200px)] max-w-4xl flex-col items-center justify-center px-6"
+>
+	<h1
+		class="font-manuscript mb-8 text-center text-6xl text-black md:text-7xl lg:text-8xl dark:text-white"
+	>
 		Arsène Lupin
 	</h1>
-	
-	<blockquote class="font-serif-fine text-xl md:text-2xl text-center italic mb-8 font-light text-black dark:text-white">
+
+	<blockquote
+		class="font-serif-fine mb-8 text-center text-xl font-light text-black italic md:text-2xl dark:text-white"
+	>
 		« Il faut être de son temps. »
 	</blockquote>
-	
-	<p class="font-serif-fine text-lg text-center font-light leading-relaxed mb-12 text-black dark:text-white max-w-2xl">
-		Plongez dans l'univers du gentleman-cambrioleur le plus célèbre de la littérature française, 
+
+	<p
+		class="font-serif-fine mb-12 max-w-2xl text-center text-lg leading-relaxed font-light text-black dark:text-white"
+	>
+		Plongez dans l'univers du gentleman-cambrioleur le plus célèbre de la littérature française,
 		créé par Maurice Leblanc.
 	</p>
-	
-	<nav class="flex flex-col sm:flex-row gap-6">
-		<a 
-			href="/personnage" 
-			class="font-serif-fine text-lg px-8 py-3 border border-black dark:border-white 
-				   text-center text-black dark:text-white hover:bg-black hover:text-white 
-				   dark:hover:bg-white dark:hover:text-black transition-colors duration-300 
-				   no-underline decoration-none"
+
+	<nav class="flex flex-col gap-6 sm:flex-row">
+		<a
+			href="/personnage"
+			class="font-serif-fine decoration-none border border-black px-8 py-3 text-center
+				   text-lg text-black no-underline transition-colors duration-300
+				   hover:bg-black hover:text-white dark:border-white dark:text-white
+				   dark:hover:bg-white dark:hover:text-black"
 		>
 			Le Personnage
 		</a>
-		<a 
-			href="/oeuvres" 
-			class="font-serif-fine text-lg px-8 py-3 border border-black dark:border-white 
-				   text-center text-black dark:text-white hover:bg-black hover:text-white 
-				   dark:hover:bg-white dark:hover:text-black transition-colors duration-300 
-				   no-underline decoration-none"
+		<a
+			href="/oeuvres"
+			class="font-serif-fine decoration-none border border-black px-8 py-3 text-center
+				   text-lg text-black no-underline transition-colors duration-300
+				   hover:bg-black hover:text-white dark:border-white dark:text-white
+				   dark:hover:bg-white dark:hover:text-black"
 		>
 			Les Œuvres
 		</a>
