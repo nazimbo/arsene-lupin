@@ -28,9 +28,13 @@
 >
 	<header class="container mx-auto flex items-center justify-between px-4 py-6">
 		<nav class="flex gap-6">
-			<a href="/" class="font-serif-fine hover:underline">Accueil</a>
-			<a href="/personnage" class="font-serif-fine hover:underline">Le Personnage</a>
-			<a href="/oeuvres" class="font-serif-fine hover:underline">Les Œuvres</a>
+			<a href="/" class="font-serif-fine hover:underline" data-sveltekit-preload-data>Accueil</a>
+			<a href="/personnage" class="font-serif-fine hover:underline" data-sveltekit-preload-data
+				>Le Personnage</a
+			>
+			<a href="/oeuvres" class="font-serif-fine hover:underline" data-sveltekit-preload-data
+				>Les Œuvres</a
+			>
 		</nav>
 		<ThemeToggle />
 	</header>

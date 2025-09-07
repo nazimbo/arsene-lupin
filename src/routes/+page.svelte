@@ -32,6 +32,7 @@
 				   text-lg text-black no-underline transition-colors duration-300
 				   hover:bg-black hover:text-white dark:border-white dark:text-white
 				   dark:hover:bg-white dark:hover:text-black"
+			data-sveltekit-preload-data
 		>
 			Le Personnage
 		</a>
@@ -41,6 +42,7 @@
 				   text-lg text-black no-underline transition-colors duration-300
 				   hover:bg-black hover:text-white dark:border-white dark:text-white
 				   dark:hover:bg-white dark:hover:text-black"
+			data-sveltekit-preload-data
 		>
 			Les Œuvres
 		</a>

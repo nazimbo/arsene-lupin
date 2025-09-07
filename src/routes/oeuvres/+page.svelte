@@ -1,17 +1,16 @@
 <script lang="ts">
 	import ArabesqueS from '$lib/components/ArabesqueS.svelte';
 	import { oeuvres } from '$lib/data/oeuvres.js';
+	import { SvelteSet } from 'svelte/reactivity';
 
-	let expandedRecueils: Set<number> = $state(new Set());
+	let expandedRecueils = new SvelteSet<number>();
 
 	function toggleRecueil(index: number) {
-		const newSet = new Set(expandedRecueils);
-		if (newSet.has(index)) {
-			newSet.delete(index);
+		if (expandedRecueils.has(index)) {
+			expandedRecueils.delete(index);
 		} else {
-			newSet.add(index);
+			expandedRecueils.add(index);
 		}
-		expandedRecueils = newSet;
 	}
 </script>
 
@@ -37,7 +36,7 @@
 
 		<!-- Liste des œuvres avec arabesques S verticales -->
 		<div class="relative">
-			{#each oeuvres as oeuvre, index}
+			{#each oeuvres as oeuvre, index (oeuvre.titre)}
 				<!-- Œuvre -->
 				<article class="relative text-center">
 					<div class="inline-block">
@@ -93,7 +92,7 @@
 								: 'max-h-0 opacity-0'}"
 						>
 							<ul class="space-y-1">
-								{#each oeuvre.nouvelles as nouvelle}
+								{#each oeuvre.nouvelles as nouvelle (nouvelle)}
 									<li
 										class="font-serif-fine list-none text-lg font-light text-black dark:text-white"
 									>
