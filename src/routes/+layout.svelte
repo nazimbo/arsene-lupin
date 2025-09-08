@@ -8,7 +8,7 @@
 
 	let { children } = $props();
 
-	// Initialiser le thème au montage du composant
+	// Initialize theme on component mount
 	onMount(() => {
 		if (browser) {
 			const savedTheme = localStorage.getItem('theme') as 'light' | 'dark';

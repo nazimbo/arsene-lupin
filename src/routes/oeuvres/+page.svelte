@@ -24,7 +24,7 @@
 
 <div class="min-h-screen py-12">
 	<div class="mx-auto max-w-4xl px-6">
-		<!-- Titre principal -->
+		<!-- Main title -->
 		<header class="mb-16 text-center">
 			<h1 class="font-manuscript mb-6 text-6xl text-black md:text-7xl lg:text-8xl dark:text-white">
 				Les Œuvres
@@ -34,10 +34,10 @@
 			</p>
 		</header>
 
-		<!-- Liste des œuvres avec arabesques S verticales -->
+		<!-- List of works with vertical S arabesques -->
 		<div class="relative">
 			{#each oeuvres as oeuvre, index (oeuvre.titre)}
-				<!-- Œuvre -->
+				<!-- Work -->
 				<article class="relative text-center">
 					<div class="inline-block">
 						{#if oeuvre.type === 'recueil'}
@@ -81,7 +81,7 @@
 						{/if}
 					</div>
 
-					<!-- Nouvelles (pour les recueils) -->
+					<!-- Short stories (for collections) -->
 					{#if oeuvre.type === 'recueil' && oeuvre.nouvelles}
 						<div
 							id="recueil-{index}"
@@ -104,7 +104,7 @@
 					{/if}
 				</article>
 
-				<!-- Arabesque S vertical entre les œuvres (sauf après la dernière) -->
+				<!-- Vertical S arabesque between works (except after the last one) -->
 				{#if index < oeuvres.length - 1}
 					<div class="my-24 flex justify-center">
 						<ArabesqueS class="rotate-90 text-black dark:text-white" />
@@ -116,7 +116,7 @@
 </div>
 
 <style>
-	/* Animation subtile pour les arabesques au scroll */
+	/* Subtle animation for scrolling arabesques */
 	@keyframes gentle-sway {
 		0%,
 		100% {

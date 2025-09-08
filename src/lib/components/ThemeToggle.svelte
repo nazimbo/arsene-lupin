@@ -5,15 +5,15 @@
 <button
 	onclick={toggleTheme}
 	class="rounded-full p-2 transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-900"
-	aria-label={$theme === 'light' ? 'Passer en mode sombre' : 'Passer en mode clair'}
+	aria-label={$theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
 >
 	{#if $theme === 'light'}
-		<!-- Icône lune pour mode sombre -->
+		<!-- Moon icon for dark mode -->
 		<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
 			<path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
 		</svg>
 	{:else}
-		<!-- Icône soleil pour mode clair -->
+		<!-- Sun icon for light mode -->
 		<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
 			<path
 				fill-rule="evenodd"
