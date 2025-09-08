@@ -1,6 +1,8 @@
 <script lang="ts">
 	import ArabesqueS from '$lib/components/ArabesqueS.svelte';
-	import { oeuvres } from '$lib/data/oeuvres.js';
+	import { oeuvresTranslated } from '$lib/data/oeuvres-i18n.js';
+	import { locale } from '$lib/stores/locale';
+	import { _ } from 'svelte-i18n';
 	import { SvelteSet } from 'svelte/reactivity';
 
 	let expandedRecueils = new SvelteSet<number>();
@@ -15,29 +17,23 @@
 </script>
 
 <svelte:head>
-	<title>Les Œuvres - Arsène Lupin</title>
-	<meta
-		name="description"
-		content="Découvrez toutes les aventures d'Arsène Lupin par Maurice Leblanc"
-	/>
+	<title>{$_('works.title')} - Arsène Lupin</title>
+	<meta name="description" content={$_('meta.worksDescription')} />
 </svelte:head>
 
 <div class="min-h-screen py-12">
 	<div class="mx-auto max-w-4xl px-6">
-		<!-- Main title -->
 		<header class="mb-16 text-center">
 			<h1 class="font-manuscript mb-6 text-6xl text-black md:text-7xl lg:text-8xl dark:text-white">
-				Les Œuvres
+				{$_('works.title')}
 			</h1>
 			<p class="font-serif-fine text-xl font-light text-black dark:text-white">
-				Le canon lupinien par ordre de parution
+				{$_('works.subtitle')}
 			</p>
 		</header>
 
-		<!-- List of works with vertical S arabesques -->
 		<div class="relative">
-			{#each oeuvres as oeuvre, index (oeuvre.titre)}
-				<!-- Work -->
+			{#each oeuvresTranslated as oeuvre, index (oeuvre.titre[$locale])}
 				<article class="relative text-center">
 					<div class="inline-block">
 						{#if oeuvre.type === 'recueil'}
@@ -50,7 +46,7 @@
 								<h2
 									class="font-serif-fine text-2xl font-light text-black md:text-3xl dark:text-white"
 								>
-									{oeuvre.titre}
+									{oeuvre.titre[$locale]}
 									<span
 										class="ml-2 inline-block transition-transform duration-300 {expandedRecueils.has(
 											index
@@ -71,7 +67,7 @@
 							<h2
 								class="font-serif-fine text-2xl font-light text-black md:text-3xl dark:text-white"
 							>
-								{oeuvre.titre}
+								{oeuvre.titre[$locale]}
 							</h2>
 							{#if oeuvre.annee}
 								<span class="font-serif-fine text-lg text-black dark:text-white">
@@ -81,7 +77,6 @@
 						{/if}
 					</div>
 
-					<!-- Short stories (for collections) -->
 					{#if oeuvre.type === 'recueil' && oeuvre.nouvelles}
 						<div
 							id="recueil-{index}"
@@ -92,7 +87,7 @@
 								: 'max-h-0 opacity-0'}"
 						>
 							<ul class="space-y-1">
-								{#each oeuvre.nouvelles as nouvelle (nouvelle)}
+								{#each oeuvre.nouvelles[$locale] as nouvelle (nouvelle)}
 									<li
 										class="font-serif-fine list-none text-lg font-light text-black dark:text-white"
 									>
@@ -104,8 +99,7 @@
 					{/if}
 				</article>
 
-				<!-- Vertical S arabesque between works (except after the last one) -->
-				{#if index < oeuvres.length - 1}
+				{#if index < oeuvresTranslated.length - 1}
 					<div class="my-24 flex justify-center">
 						<ArabesqueS class="rotate-90 text-black dark:text-white" />
 					</div>
@@ -115,15 +109,3 @@
 	</div>
 </div>
 
-<style>
-	/* Subtle animation for scrolling arabesques */
-	@keyframes gentle-sway {
-		0%,
-		100% {
-			transform: translateX(0);
-		}
-		50% {
-			transform: translateX(2px);
-		}
-	}
-</style>

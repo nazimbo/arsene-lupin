@@ -1,6 +1,10 @@
+<script lang="ts">
+	import { _ } from 'svelte-i18n';
+</script>
+
 <svelte:head>
-	<title>Arsène Lupin - L'Ombre et la Plume</title>
-	<meta name="description" content="L'univers du gentleman-cambrioleur Arsène Lupin" />
+	<title>{$_('home.title')} - L'Ombre et la Plume</title>
+	<meta name="description" content={$_('meta.homeDescription')} />
 </svelte:head>
 
 <div
@@ -9,20 +13,19 @@
 	<h1
 		class="font-manuscript mb-8 text-center text-6xl text-black md:text-7xl lg:text-8xl dark:text-white"
 	>
-		Arsène Lupin
+		{$_('home.title')}
 	</h1>
 
 	<blockquote
 		class="font-serif-fine mb-8 text-center text-xl font-light text-black italic md:text-2xl dark:text-white"
 	>
-		« Il faut être de son temps. »
+		{$_('home.quote')}
 	</blockquote>
 
 	<p
 		class="font-serif-fine mb-12 max-w-2xl text-center text-lg leading-relaxed font-light text-black dark:text-white"
 	>
-		Plongez dans l'univers du gentleman-cambrioleur le plus célèbre de la littérature française,
-		créé par Maurice Leblanc.
+		{$_('home.description')}
 	</p>
 
 	<nav class="flex flex-col gap-6 sm:flex-row">
@@ -34,7 +37,7 @@
 				   dark:hover:bg-white dark:hover:text-black"
 			data-sveltekit-preload-data
 		>
-			Le Personnage
+			{$_('home.characterLink')}
 		</a>
 		<a
 			href="/oeuvres"
@@ -44,7 +47,7 @@
 				   dark:hover:bg-white dark:hover:text-black"
 			data-sveltekit-preload-data
 		>
-			Les Œuvres
+			{$_('home.worksLink')}
 		</a>
 	</nav>
 </div>

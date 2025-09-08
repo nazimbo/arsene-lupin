@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "home": "Home",
+    "character": "The Character",
+    "works": "The Works"
+  },
+  "home": {
+    "title": "Arsène Lupin",
+    "quote": "« One must be of one's time. »",
+    "description": "Dive into the universe of the most famous gentleman-burglar in French literature, created by Maurice Leblanc.",
+    "characterLink": "The Character",
+    "worksLink": "The Works"
+  },
+  "character": {
+    "title": "The Character",
+    "subtitle": "The ultimate gentleman-burglar",
+    "description": "Arsène Lupin is a fictional character created by Maurice Leblanc in 1905. A gentleman-burglar with multiple faces, he embodies elegance and intelligence in the service of crime... or justice."
+  },
+  "works": {
+    "title": "The Works",
+    "subtitle": "The Lupin canon in order of publication"
+  },
+  "meta": {
+    "homeDescription": "The universe of gentleman-burglar Arsène Lupin",
+    "characterDescription": "Discover Arsène Lupin, the gentleman-burglar",
+    "worksDescription": "Discover all the adventures of Arsène Lupin by Maurice Leblanc"
+  }
+}

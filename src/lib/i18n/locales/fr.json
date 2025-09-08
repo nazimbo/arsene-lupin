@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "character": "Le Personnage",
+    "works": "Les Œuvres"
+  },
+  "home": {
+    "title": "Arsène Lupin",
+    "quote": "« Il faut être de son temps. »",
+    "description": "Plongez dans l'univers du gentleman-cambrioleur le plus célèbre de la littérature française, créé par Maurice Leblanc.",
+    "characterLink": "Le Personnage",
+    "worksLink": "Les Œuvres"
+  },
+  "character": {
+    "title": "Le Personnage",
+    "subtitle": "Le gentleman-cambrioleur par excellence",
+    "description": "Arsène Lupin est un personnage de fiction créé par Maurice Leblanc en 1905. Gentleman-cambrioleur aux multiples visages, il incarne l'élégance et l'intelligence au service du crime... ou de la justice."
+  },
+  "works": {
+    "title": "Les Œuvres",
+    "subtitle": "Le canon lupinien par ordre de parution"
+  },
+  "meta": {
+    "homeDescription": "L'univers du gentleman-cambrioleur Arsène Lupin",
+    "characterDescription": "Découvrez Arsène Lupin, le gentleman-cambrioleur",
+    "worksDescription": "Découvrez toutes les aventures d'Arsène Lupin par Maurice Leblanc"
+  }
+}
